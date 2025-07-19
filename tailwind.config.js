@@ -12,7 +12,10 @@ module.exports = {
           hover: "#16A34A"
         }
       }
-    }
   },
+  fontFamily:{
+    poppins:["Poppins"]
+  }
+},
   plugins: []
 };
