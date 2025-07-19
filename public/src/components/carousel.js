@@ -1,7 +1,6 @@
-// carousel.js
-console.log('🍿 carousel.js loaded');
+console.log('carousel.js loaded');
 export default function initCarousel(containerSelector, imageUrls = []) {
-     console.log('🎞 initCarousel() 開始執行');
+     console.log('initCarousel() 開始執行');
   const container = document.querySelector(containerSelector);
   if (!container || imageUrls.length === 0) return;
 
@@ -21,11 +20,11 @@ export default function initCarousel(containerSelector, imageUrls = []) {
   });
   wrapper.appendChild(track);
 
-  // Prev/Next
+  // Prev.Next
   const btnPrev = document.createElement('button');
   const btnNext = document.createElement('button');
   [btnPrev.textContent, btnNext.textContent] = ['‹', '›'];
-  const btnClasses = 'absolute top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-50 text-white p-2 rounded';
+  const btnClasses = 'absolute top-1/2 transform -translate-y-1/2 bg-gray-800 bg-opacity-100 text-white p-2 rounded';
   btnPrev.className = `${btnClasses} left-2`;
   btnNext.className = `${btnClasses} right-2`;
 
